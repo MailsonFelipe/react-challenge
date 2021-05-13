@@ -8,7 +8,7 @@ Neste teste existem várias respostas corretas, pois o objetivo é avaliar a sua
 
 O projeto deve utilizar webpack e deve ser desenvolvido em React para o carrinho de compras.
 
-O Front-End deve utilizar Material UI: https://material-ui-next.com/
+O Front-End deve pode Material UI: https://material-ui-next.com/
 
 Os produtos disponíveis devem ser recuperados através de uma API Rest, disponibilizada neste mesmo projeto.
 
