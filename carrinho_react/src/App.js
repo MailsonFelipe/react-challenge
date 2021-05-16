@@ -1,9 +1,9 @@
-import './App.css';
+import PaginaPrincipal from './pages/index'
 
 function App() {
   return (
     <div>
-      Olá
+        <PaginaPrincipal/>
     </div>
   );
 }
