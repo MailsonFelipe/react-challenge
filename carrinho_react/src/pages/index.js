@@ -20,7 +20,11 @@ console.log(products)
         </nav>
 
         {products.map((product) => (
-        <img src={product.picture}/>
+        <div>
+            <img src={product.picture}/>
+            <h3>{product.title}</h3>
+            <h3>{product.price}</h3>
+        </div>
         ))}
         </div>
     )
