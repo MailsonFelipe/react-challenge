@@ -1,30 +1,29 @@
-import React, { Component} from 'react';
+import React, { useState} from 'react';
 import './styles.css';
 
 
-class PaginaPrincipal extends Component{
+function PaginaPrincipal(){
 
-    viewProducts(){
-        
-        
-        alert("oi")
-        
-    }
+var products = require('/workspace/react-challenge/carrinho_react/src/rest-api/products.json') 
+products = products.products;
 
-    
-render(){
+console.log(products)
 
     return(
+        <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div className="container">
                 <img className="logo" src="https://www.itriad.org.br/images/base/logo-5.png" alt="logo"></img>
                 <p className="title">Produtos</p>
-                <button className="btn" onClick={this.viewProducts}>Carrinho</button>
+                <button className="btn">Carrinho</button>
             </div>
-            <div onLoad={this.viewProducts}></div>
         </nav>
-    
+
+        {products.map((product) => (
+        <img src={product.picture}/>
+        ))}
+        </div>
     )
-    }
+        
 }
 export default PaginaPrincipal;
